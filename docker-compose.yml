@@ -19,5 +19,6 @@ services:
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
       - ./ts3client:/home/teamspeak/.ts3client:rw
+    privileged: true
 
 # vim: et sw=2
