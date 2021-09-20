@@ -20,5 +20,7 @@ services:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
       - ./ts3client:/home/teamspeak/.ts3client:rw
     privileged: true
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
 
 # vim: et sw=2
